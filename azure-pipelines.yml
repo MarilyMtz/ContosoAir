@@ -4,7 +4,7 @@ trigger:
   - master
 steps:
   - task: CopyFiles@2
-    displayName: 'Copy Files to: $(build.artifactstagingdirectory)/Templates'
+    displayName: 'Copy Files to: $([![Build Status](https://dev.azure.com/linjp19/evento/_apis/build/status/MarilyMtz.ContosoAir?branchName=master)](https://dev.azure.com/linjp19/evento/_build/latest?definitionId=1&branchName=master))/Templates'
     inputs:
       SourceFolder: deployment
       Contents: '*.json'
